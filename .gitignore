@@ -1,0 +1,10 @@
+*.db
+*.sqlite
+*.mdb
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+personal_notes/
+config.ini
+*.env
