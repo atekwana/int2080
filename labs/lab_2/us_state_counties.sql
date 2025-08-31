@@ -58,3 +58,4 @@ USE florida;
 
 -- switching to New York db
 USE new_york;
+-- 00
