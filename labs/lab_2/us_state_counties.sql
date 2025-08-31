@@ -93,7 +93,7 @@ FROM
 ORDER BY
     established_date
     -- switching to California db
-    USE california;
+    -- USE california;
 
 -- switching to Colorado db
 -- USE colorado;
