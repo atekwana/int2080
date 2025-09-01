@@ -354,7 +354,7 @@ VALUES
         'Waterfall',
         'Niagara Falls',
         'Niagara County',
-        '12000-01-01'
+        '1000-01-01'
     ),
     (
         'Maid of the Mist',

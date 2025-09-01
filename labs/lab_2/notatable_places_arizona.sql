@@ -42,7 +42,7 @@ VALUES
         'Grand Canyon National Park (South Rim)',
         'National Park',
         'Grand Canyon Village',
-        N 'Coconino County',
+        'Coconino County',
         '1919-02-26'
     ),
     (
@@ -957,7 +957,15 @@ CREATE TABLE
         INDEX idx_county (county),
         INDEX idx_established_date (established_date)
     );
-
+-- inserting researched data about Navajo County
+INSERT INTO
+    navajo_county (
+        place_name,
+        place_type,
+        city,
+        county,
+        established_date
+    )
 VALUES
     (
         'Wupatki National Monument',
@@ -1028,87 +1036,6 @@ VALUES
         'Winslow',
         'Navajo County',
         '1800-01-01'
-    );
-
--- inserting researched data about Navajo County
-INSERT INTO
-    navajo_county (
-        place_name,
-        place_type,
-        city,
-        county,
-        established_date
-    )
-VALUES
-    (
-        'Show Low Lake',
-        'Lake',
-        'Show Low',
-        'Navajo County',
-        '1950-01-01'
-    ),
-    (
-        'Casa Malpais Archaeological Park',
-        'Archaeological Site',
-        'Springerville',
-        'Navajo County',
-        '1200-01-01'
-    ),
-    (
-        'Apache-Sitgreaves National Forest',
-        'National Forest',
-        'Pinetop-Lakeside',
-        'Navajo County',
-        '1908-01-01'
-    ),
-    (
-        'Fool Hollow Lake Recreation Area',
-        'Recreation Area',
-        'Show Low',
-        'Navajo County',
-        '1965-01-01'
-    ),
-    (
-        'White Mountain Nature Center',
-        'Nature Center',
-        'Pinetop-Lakeside',
-        'Navajo County',
-        '1980-01-01'
-    ),
-    (
-        'Little House Museum',
-        'Museum',
-        'Pinetop-Lakeside',
-        'Navajo County',
-        '1970-01-01'
-    ),
-    (
-        'Lyman Lake State Park',
-        'State Park',
-        'St. Johns',
-        'Navajo County',
-        '1961-01-01'
-    ),
-    (
-        'Rainbow Forest Museum',
-        'Museum',
-        'Holbrook',
-        'Navajo County',
-        '1963-01-01'
-    ),
-    (
-        'Navajo County Historical Museum',
-        'Museum',
-        'Holbrook',
-        'Navajo County',
-        '1976-01-01'
-    ),
-    (
-        'Big Lake Recreation Area',
-        'Recreation Area',
-        'Greer',
-        'Navajo County',
-        '1920-01-01'
     );
 
 -- display table contents for Coconino County
