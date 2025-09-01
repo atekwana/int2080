@@ -957,6 +957,7 @@ CREATE TABLE
         INDEX idx_county (county),
         INDEX idx_established_date (established_date)
     );
+
 -- inserting researched data about Navajo County
 INSERT INTO
     navajo_county (
