@@ -2,6 +2,7 @@
 -- int2080
 -- 31/08/25
 -- Florida data base displaying 10 counties and 10 notable attractions
+
 -- select database
 USE florida;
 

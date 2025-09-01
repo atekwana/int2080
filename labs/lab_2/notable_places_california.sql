@@ -2,6 +2,7 @@
 -- int2080
 -- 31/08/25
 -- California data base displaying 10 counties and 10 notable attractions
+
 -- select data base
 USE california;
 
