@@ -1,3 +1,8 @@
+-- kasey atekwana
+-- int2080
+-- 31/08/25
+-- Arizona data base displaying 10 counties and 10 notable attractions
+
 -- select database
 USE arizona;
 
@@ -1075,7 +1080,7 @@ FROM
 ORDER BY
     place_id;
 
--- display table contents for Santa Cruz County
+-- display table contents for Pima County
 SELECT
     *
 FROM
@@ -1083,7 +1088,7 @@ FROM
 ORDER BY
     place_id;
 
--- display table contents for Santa Cruz County
+-- display table contents for Pinal County
 SELECT
     *
 FROM
@@ -1091,7 +1096,7 @@ FROM
 ORDER BY
     place_id;
 
--- display table contents for Santa Cruz County
+-- display table contents for Yavapai County
 SELECT
     *
 FROM
@@ -1099,7 +1104,7 @@ FROM
 ORDER BY
     place_id;
 
--- display table contents for Santa Cruz County
+-- display table contents for Yuma County
 SELECT
     *
 FROM
@@ -1107,10 +1112,10 @@ FROM
 ORDER BY
     place_id;
 
--- display table contents for Santa Cruz County
+-- display table contents for Navajo County
 SELECT
     *
 FROM
-    na
+    navajo_county
 ORDER BY
     place_id;
