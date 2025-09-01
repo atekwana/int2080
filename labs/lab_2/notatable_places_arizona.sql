@@ -2,7 +2,6 @@
 -- int2080
 -- 31/08/25
 -- Arizona data base displaying 10 counties and 10 notable attractions
-
 -- select database
 USE arizona;
 
@@ -43,7 +42,7 @@ VALUES
         'Grand Canyon National Park (South Rim)',
         'National Park',
         'Grand Canyon Village',
-        'Coconino County',
+        N 'Coconino County',
         '1919-02-26'
     ),
     (
@@ -1040,7 +1039,79 @@ INSERT INTO
         county,
         established_date
     )
-    -- display table contents for Coconino County
+VALUES
+    (
+        'Show Low Lake',
+        'Lake',
+        'Show Low',
+        'Navajo County',
+        '1950-01-01'
+    ),
+    (
+        'Casa Malpais Archaeological Park',
+        'Archaeological Site',
+        'Springerville',
+        'Navajo County',
+        '1200-01-01'
+    ),
+    (
+        'Apache-Sitgreaves National Forest',
+        'National Forest',
+        'Pinetop-Lakeside',
+        'Navajo County',
+        '1908-01-01'
+    ),
+    (
+        'Fool Hollow Lake Recreation Area',
+        'Recreation Area',
+        'Show Low',
+        'Navajo County',
+        '1965-01-01'
+    ),
+    (
+        'White Mountain Nature Center',
+        'Nature Center',
+        'Pinetop-Lakeside',
+        'Navajo County',
+        '1980-01-01'
+    ),
+    (
+        'Little House Museum',
+        'Museum',
+        'Pinetop-Lakeside',
+        'Navajo County',
+        '1970-01-01'
+    ),
+    (
+        'Lyman Lake State Park',
+        'State Park',
+        'St. Johns',
+        'Navajo County',
+        '1961-01-01'
+    ),
+    (
+        'Rainbow Forest Museum',
+        'Museum',
+        'Holbrook',
+        'Navajo County',
+        '1963-01-01'
+    ),
+    (
+        'Navajo County Historical Museum',
+        'Museum',
+        'Holbrook',
+        'Navajo County',
+        '1976-01-01'
+    ),
+    (
+        'Big Lake Recreation Area',
+        'Recreation Area',
+        'Greer',
+        'Navajo County',
+        '1920-01-01'
+    );
+
+-- display table contents for Coconino County
 SELECT
     *
 FROM

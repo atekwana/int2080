@@ -2,7 +2,6 @@
 -- int2080
 -- 31/08/25
 -- California data base displaying 10 counties and 10 notable attractions
-
 -- select data base
 USE california;
 
@@ -68,7 +67,7 @@ VALUES
     ),
     (
         'Santa Monica Pier',
-        'Historic Landmark / Entertainment',
+        'Historic Landmark',
         'Santa Monica',
         'Los Angeles County',
         '1909-09-09'
@@ -111,17 +110,18 @@ VALUES
 
 -- if table already exists drop
 -- if table does not exists create table
+-- if table already exists drop
 DROP TABLE IF EXISTS orange_county;
 
--- create table in california db
+-- create table for Orange County
 CREATE TABLE
     orange_county (
         place_id INT AUTO_INCREMENT PRIMARY KEY, -- place_id: unique auto-increment ID (primary key)
         place_name VARCHAR(100) NOT NULL, -- place_name: required name of the place
         place_type VARCHAR(50) NOT NULL, -- place_type: required category/type of place
-        city VARCHAR(75), -- city: city info
-        county VARCHAR(75), -- county: county info
-        established_date DATE, -- established_date: founding date
+        city VARCHAR(75), -- city: optional city info
+        county VARCHAR(75), -- county: optional county info
+        established_date DATE, -- established_date: optional founding date
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- created_at: timestamp of record creation
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- updated_at: auto-updated timestamp on changes
         -- defining indexes
@@ -149,7 +149,7 @@ VALUES
         '1955-07-17'
     ),
     (
-        'Knott’s Berry Farm',
+        'Knott Berry Farm',
         'Theme Park',
         'Buena Park',
         'Orange County',
@@ -157,7 +157,7 @@ VALUES
     ),
     (
         'Huntington Beach Pier',
-        'Historic Landmark / Pier',
+        'Historic Landmark',
         'Huntington Beach',
         'Orange County',
         '1904-01-01'
@@ -206,7 +206,7 @@ VALUES
     ),
     (
         'Dana Point Harbor',
-        'Harbor / Recreation',
+        'Harbors',
         'Dana Point',
         'Orange County',
         '1971-01-01'
@@ -214,11 +214,11 @@ VALUES
 
 -- if table already exists drop
 -- if table does not exists create table
-DROP TABLE IF EXISTS san_fransisco_county;
+DROP TABLE IF EXISTS san_francisco_county;
 
 -- create table in california db
 CREATE TABLE
-    san_fransisco_county (
+    san_francisco_county (
         place_id INT AUTO_INCREMENT PRIMARY KEY, -- place_id: unique auto-increment ID (primary key)
         place_name VARCHAR(100) NOT NULL, -- place_name: required name of the place
         place_type VARCHAR(50) NOT NULL, -- place_type: required category/type of place
@@ -234,9 +234,9 @@ CREATE TABLE
         INDEX idx_established_date (established_date)
     );
 
--- inserting researched data about San Fransisco County
+-- inserting researched data about San Francisco County
 INSERT INTO
-    san_fransisco_county (
+    san_francisco_county (
         place_name,
         place_type,
         city,
@@ -259,7 +259,7 @@ VALUES
         '1934-08-11'
     ),
     (
-        'Fisherman’s Wharf',
+        'Fisherman Wharf',
         'Tourist District',
         'San Francisco',
         'San Francisco County',
@@ -267,14 +267,14 @@ VALUES
     ),
     (
         'Pier 39',
-        'Shopping / Entertainment',
+        'Shopping',
         'San Francisco',
         'San Francisco County',
         '1978-06-01'
     ),
     (
         'Union Square',
-        'Public Plaza / Shopping District',
+        'Public Plaza',
         'San Francisco',
         'San Francisco County',
         '1850-01-01'
@@ -282,7 +282,7 @@ VALUES
     (
         'Chinatown San Francisco',
         'Historic District',
-        'San Francisco',
+        'San San Francisco',
         'San Francisco County',
         '1848-01-01'
     ),
@@ -302,14 +302,14 @@ VALUES
     ),
     (
         'Lombard Street',
-        'Historic Landmark / Road',
+        'Historic Landmark',
         'San Francisco',
         'San Francisco County',
         '1922-01-01'
     ),
     (
         'Palace of Fine Arts',
-        'Historic Landmark / Museum',
+        'Historic Landmark',
         'San Francisco',
         'San Francisco County',
         '1915-12-15'
@@ -356,14 +356,14 @@ VALUES
     ),
     (
         'Castello di Amorosa',
-        'Winery / Historic Castle',
+        'Winery',
         'Calistoga',
         'Napa County',
         '2007-01-01'
     ),
     (
         'Napa Valley Wine Train',
-        'Tourist Attraction / Train',
+        'Tourist Attraction',
         'Napa',
         'Napa County',
         '1989-01-01'
@@ -459,7 +459,7 @@ VALUES
     ),
     (
         'Apple Park Visitor Center',
-        'Museum / Visitor Center',
+        'Museum',
         'Cupertino',
         'Santa Clara County',
         '2017-11-17'
@@ -480,7 +480,7 @@ VALUES
     ),
     (
         'Winchester Mystery House',
-        'Historic Mansion / Museum',
+        'Historic Mansion',
         'San Jose',
         'Santa Clara County',
         '1884-01-01'
@@ -515,7 +515,7 @@ VALUES
     ),
     (
         'Happy Hollow Park & Zoo',
-        'Zoo / Amusement Park',
+        'Zoo',
         'San Jose',
         'Santa Clara County',
         '1961-01-01'
@@ -545,7 +545,7 @@ CREATE TABLE
 
 -- inserting researched data about San Diego County
 INSERT INTO
-    santa_diego_county (
+    san_diego_county (
         place_name,
         place_type,
         city,
@@ -562,21 +562,21 @@ VALUES
     ),
     (
         'Balboa Park',
-        'Park / Cultural Center',
+        'Park',
         'San Diego',
         'San Diego County',
         '1868-01-01'
     ),
     (
         'USS Midway Museum',
-        'Museum / Historic Site',
+        'Museum',
         'San Diego',
         'San Diego County',
         '2004-06-07'
     ),
     (
         'SeaWorld San Diego',
-        'Theme Park / Aquarium',
+        'Theme Park',
         'San Diego',
         'San Diego County',
         '1964-03-21'
@@ -590,7 +590,7 @@ VALUES
     ),
     (
         'La Jolla Cove',
-        'Beach / Scenic Spot',
+        'Beach',
         'La Jolla',
         'San Diego County',
         '1900-01-01'
@@ -658,7 +658,7 @@ INSERT INTO
 VALUES
     (
         'California State Capitol',
-        'Government / Historic Site',
+        'Government',
         'Sacramento',
         'Sacramento County',
         '1874-01-01'
@@ -686,7 +686,7 @@ VALUES
     ),
     (
         'Tower Bridge',
-        'Bridge / Historic Landmark',
+        'Bridge',
         'Sacramento',
         'Sacramento County',
         '1935-12-15'
@@ -700,7 +700,7 @@ VALUES
     ),
     (
         'American River Parkway',
-        'Park / Recreation Area',
+        'Park',
         'Sacramento',
         'Sacramento County',
         '1977-01-01'
@@ -789,7 +789,7 @@ VALUES
     ),
     (
         'Lake Perris State Recreation Area',
-        'State Park / Recreation Area',
+        'State Park ',
         'Perris',
         'Riverside County',
         '1973-01-01'
@@ -810,14 +810,14 @@ VALUES
     ),
     (
         'March Field Air Museum',
-        'Museum / Aviation',
+        'Museum',
         'Riverside',
         'Riverside County',
         '1962-01-01'
     ),
     (
         'Mount Rubidoux Park',
-        'Park / Hiking Trail',
+        'Park',
         'Riverside',
         'Riverside County',
         '1907-01-01'
@@ -899,14 +899,14 @@ VALUES
     ),
     (
         'Oxnard State Beach',
-        'Beach / Recreation Area',
+        'Beach',
         'Oxnard',
         'Ventura County',
         '1927-01-01'
     ),
     (
         'Rancho Camulos Museum',
-        'Historic Site / Museum',
+        'Historic Site',
         'Santa Paula',
         'Ventura County',
         '1850-01-01'
@@ -981,7 +981,7 @@ VALUES
     ),
     (
         'Stearns Wharf',
-        'Historic Landmark / Pier',
+        'Historic Landmark',
         'Santa Barbara',
         'Santa Barbara County',
         '1872-01-01'
@@ -1030,7 +1030,7 @@ VALUES
     ),
     (
         'Old Mission Santa Barbara Rose Garden',
-        'Botanical Garden / Historic Landmark',
+        'Botanical Garden',
         'Santa Barbara',
         'Santa Barbara County',
         '1926-01-01'
