@@ -2,7 +2,6 @@
 -- int2080
 -- 31/08/25
 -- New York data base displaying 10 counties and 10 notable attractions
-
 -- select database
 USE new_york;
 
