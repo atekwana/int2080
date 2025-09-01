@@ -27,7 +27,7 @@ CREATE TABLE
         INDEX idx_established_date (established_date)
     );
 
--- inserting researched data about apache county
+-- inserting researched data about Los Angeles County
 INSERT INTO
     los_angeles_county (
         place_name,
@@ -1034,3 +1034,83 @@ VALUES
         'Santa Barbara County',
         '1926-01-01'
     );
+
+-- display table contents for Los Angeles County
+SELECT
+    *
+FROM
+    los_angeles_county
+ORDER BY
+    place_id;
+
+-- display table contents for Orange County
+SELECT
+    *
+FROM
+    orange_county
+ORDER BY
+    place_id;
+
+-- display table contents for San Francisco County
+SELECT
+    *
+FROM
+    san_francisco_county
+ORDER BY
+    place_id;
+
+-- display table contents for Napa County
+SELECT
+    *
+FROM
+    napa_county
+ORDER BY
+    place_id;
+
+-- display table contents for Santa Clara County
+SELECT
+    *
+FROM
+    santa_clara_county
+ORDER BY
+    place_id;
+
+-- display table contents for San Diego County
+SELECT
+    *
+FROM
+    san_diego_county
+ORDER BY
+    place_id;
+
+-- display table contents for Sacramento County
+SELECT
+    *
+FROM
+    sacramento_county
+ORDER BY
+    place_id;
+
+-- display table contents for Riverside County
+SELECT
+    *
+FROM
+    riverside_county
+ORDER BY
+    place_id;
+
+-- display table contents for Ventura County
+SELECT
+    *
+FROM
+    ventura_county
+ORDER BY
+    place_id;
+
+-- display table contents for Santa Barbara County
+SELECT
+    *
+FROM
+    santa_barbara_county
+ORDER BY
+    place_id;

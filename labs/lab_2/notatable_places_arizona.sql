@@ -837,7 +837,7 @@ VALUES
 -- if table does not exists create table
 DROP TABLE IF EXISTS yuma_county;
 
--- # 
+-- #
 -- create table in arizona db
 CREATE TABLE
     yuma_county (
