@@ -1,6 +1,6 @@
 
-drop table if exists classwork.child_1;
 drop table if exists classwork.child_2;
+drop table if exists classwork.child_1;
 drop table if exists classwork.parent;
 
 -- creating the father table
