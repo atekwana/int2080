@@ -15,7 +15,7 @@ create table parent (
 select
 	*
 from
-	parent
+	classwork.parent
 as last_name;
 
 drop table if exists child_1;
@@ -32,7 +32,7 @@ create table child_1 (
 select
 	*
 from
-	child_1
+	classwork.child_1
 as last_name;
 
 drop table if exists child_2;
@@ -49,5 +49,5 @@ create table child_2 (
 select
 	*
 from
-	child_2
+	classwork.child_2
 as last_name;
