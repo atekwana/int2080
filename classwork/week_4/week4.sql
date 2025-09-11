@@ -15,8 +15,7 @@ create table classwork.parent (
 select
 	*
 from
-	classwork.parent
-as last_name;
+	classwork.parent;
 
 -- create child table
 create table classwork.child_1 (
@@ -31,8 +30,7 @@ create table classwork.child_1 (
 select
 	*
 from
-	classwork.child_1
-as last_name;
+	classwork.child_1;
 
 -- create child table
 create table classwork.child_2 (
@@ -47,5 +45,4 @@ create table classwork.child_2 (
 select
 	*
 from
-	classwork.child_2
-as last_name;
+	classwor;k.child_2;
