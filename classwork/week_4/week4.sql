@@ -1,4 +1,5 @@
 
+-- always drop foreign key table(s) before primary key table
 drop table if exists classwork.child_2;
 drop table if exists classwork.child_1;
 drop table if exists classwork.parent;
