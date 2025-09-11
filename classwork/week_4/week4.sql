@@ -1,5 +1,6 @@
-drop table if exists classwork.child_1;
+
 drop table if exists classwork.child_2;
+drop table if exists classwork.child_1;
 drop table if exists classwork.parent;
 
 -- creating the father table
@@ -45,4 +46,4 @@ create table classwork.child_2 (
 select
 	*
 from
-	classwor;k.child_2;
+	classwork.child_2;
