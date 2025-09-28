@@ -1,2 +1,7 @@
 pw@My5qI#8oo8! <- database root password
-mysql -u root -p 
+mysql -u root -p${PASSWORD} 
+
+mysqldump [connection_options] [dump_options] [output_options] database_name
+
+
+
