@@ -3,5 +3,8 @@ mysql -u root -p${PASSWORD}
 
 mysqldump [connection_options] [dump_options] [output_options] database_name
 
+-- to updata db
+SELECT TABLE_SCHEMA, TABLE_NAME, ENGINE FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'students_2';
+
 
 
